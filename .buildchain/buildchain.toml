@@ -30,7 +30,7 @@ registry_path = ".buildchain/publication/publication-registry.json"
 type = "latex-docker"
 image = "ghcr.io/kungfu-systems/build-images/latex-pdf-builder"
 digest = "sha256:f4dc7cb0e0b23cfc2fcde663a65f36c5e71e3ae8e6477e5a24f7ad5237300f10"
-command = "mkdir -p _build && cd paper && latexmk -pdf -outdir=../_build main.tex && mv ../_build/main.pdf ../_build/episodes-to-primitives.pdf"
+command = "export SOURCE_DATE_EPOCH=$(git log -1 --format=%ct 2>/dev/null || printf 0) && mkdir -p _build && cd paper && latexmk -pdf -outdir=../_build main.tex && mv ../_build/main.pdf ../_build/episodes-to-primitives.pdf"
 
 [publish]
 kind = "npm-paper-package"
