@@ -1,0 +1,110 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Most computational histories are collected to answer questions already known
+at capture time: which call failed, which state changed, which action produced
+a reward, or which artifact was released. The schema names the objects in
+advance. Later work searches, aggregates, or predicts within that object world.
+
+Real work creates a harder failure mode. A team can preserve every field it
+knows and still lose the relation that a future participant needs, because the
+relation did not yet have a name. Permission can be mistaken for accepted
+responsibility. An executed action can be mistaken for a settled obligation.
+A collection of verified components can be mistaken for the one project state
+a successor is authorized to continue. The missing information is not always a
+missing value. It may be a missing object boundary.
+
+This paper asks whether historical infrastructure can preserve a capacity to
+repair that kind of omission. The proposal builds on three Kung Fu Decisions:
+KFD-4 binds views to declared perspectives and permits source-preserving replay
+and transformation; KFD-5 separates candidate genesis from fact-bound
+qualification; draft KFD-6 proposes a bounded loop that compares generation
+methods over causal experience without allowing a generator to certify or
+promote itself \cite{kfd4Decision2026,kfd5Decision2026,kfd6Decision2026}.
+
+The central thesis is conditional:
+
+\begin{quote}
+A well-formed causal Episode corpus can preserve more than prior answers. It
+can preserve a governed option to replay decisions, expose unnamed burdens,
+qualify candidate Primitives, and revise the ontology under which future
+questions are formed.
+\end{quote}
+
+The word \emph{option} matters. A corpus does not discover merely by existing.
+A generated label is not a Primitive. A plausible retrospective story is not
+causal evidence. The proposed value appears only when later participants can
+identify an immutable evidence cut, reconstruct perspectives with visible
+loss, compare plural methods and conservative baselines, reject attractive
+false candidates, and keep promotion authority separate from generation.
+
+The contribution is distinct from two adjacent KFD papers. The Foundation
+paper develops facts, trust, cooperation, and boundary primitives as an ordered
+systems model \cite{kfdFoundationPaper2026}. The Observer paper develops
+declared timelines and perspective-preserving replay
+\cite{kfdObserverPaper2026}. This paper treats replayable Episodes as a
+long-lived input to ontology revision and focuses on the KFD-4 to KFD-5 to
+KFD-6 transition.
+
+We make five contributions:
+
+\begin{enumerate}[leftmargin=*]
+  \item We define an \episode{} historical asset and distinguish it from a
+        transcript, event log, provenance graph, embedding index, and endpoint
+        state.
+  \item We specify a staged discovery mechanism that keeps perspective replay,
+        candidate genesis, qualification, held-out evaluation, and promotion
+        authority independently inspectable.
+  \item We explain why control of historical representation affects the power
+        to define future questions, while deriving stewardship obligations
+        rather than a command to retain everything.
+  \item We freeze one implementation-backed KFD evidence cut and grade what it
+        supports: three live cases and six tracks, with three bounded
+        software-domain acceptances and three provisional candidates.
+  \item We propose prospective ablation, shadow-loop, transfer, and governance
+        evaluations capable of falsifying the stronger thesis.
+\end{enumerate}
+
+The paper does not claim autonomous Primitive discovery, universal ontology,
+historical novelty of current KFD candidates, or a quantified return on
+Episode retention. It claims that a mechanism can be specified, its early
+feasibility can be separated from its missing gates, and the next experiment
+can be made answerable to evidence.
+
+\section{Problem Statement and Research Questions}
+\label{sec:problem}
+
+Let an operational system at time $n$ act with ontology $O_n$. Its capture
+schema determines which entities, relations, state changes, and responsibilities
+are directly representable. A fixed-ontology history $H(O_n)$ can be perfectly
+internally consistent while remaining unable to express a distinction $x$
+that becomes load-bearing later.
+
+An ontology revision is justified only when the new distinction changes a
+required decision and cannot be recovered from the old representation at lower
+total burden. The problem is therefore not to maximize labels. It is to detect
+when repeated reconstruction, hidden coordination, divergent consequences, or
+causal variables indicate that $O_n$ is missing an independently addressable
+responsibility.
+
+We study four research questions:
+
+\begin{description}[leftmargin=2.1em,style=nextline]
+  \item[RQ1: Representation.] Which properties distinguish an Episode corpus
+  that preserves future ontology-revision capacity from anonymous traces or
+  endpoint facts?
+  \item[RQ2: Mechanism.] Can declared perspective replay improve candidate
+  genesis while KFD-5 qualification prevents narrative or method artifacts
+  from becoming Primitives?
+  \item[RQ3: Evaluation.] Under shared evidence and resource budgets, does an
+  Episode-based loop outperform fixed-ontology and no-new-Primitive baselines
+  on held-out reconstruction, transfer, and false-candidate rejection?
+  \item[RQ4: Governance.] Which integrity, retention, deletion, consent,
+  portability, access, and promotion boundaries are necessary when a corpus
+  may influence not only answers but future problem definitions?
+\end{description}
+
+These questions deliberately separate technical possibility from legitimate
+authority. A system may generate a useful candidate and still lack the right
+to retain the underlying experience, represent a participant, or change an
+adopted ontology.

@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{xcolor}
+\setlength{\emergencystretch}{2em}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  pdftitle={From Episodes to Primitives},
+  pdfauthor={Keren Dong}
+}
+
+\newcommand{\kfd}{\textsc{KFD}}
+\newcommand{\episode}{\textsc{Episode}}
+
+\title{From Episodes to Primitives:\\
+Causal Historical Assets for Evidence-Governed Ontology Revision}
+\author{Keren Dong\\Kungfu Origin Technology Limited\\\href{mailto:keren.dong@kungfu.link}{keren.dong@kungfu.link}}
+\date{Alpha draft: July 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Agent systems usually preserve histories to debug prior actions or retrieve
+prior answers. This paper studies a stronger possibility: a well-formed causal
+\episode{} corpus may preserve the option to discover that the ontology under
+which earlier questions were asked was incomplete. We define an Episode as a
+perspective-bound, provenance-carrying record of observations, choices,
+actions, dependencies, consequences, interventions, omissions, and adjacent
+fact cuts. We then specify a staged mechanism derived from Kung Fu Decisions
+(KFD): KFD-4 replays causal histories from declared perspectives; KFD-5
+separates candidate genesis from qualification; draft KFD-6 compares plural
+generation methods against fixed-ontology and no-new-primitive baselines,
+held-out evidence, and separated promotion authority. The resulting asset is
+not an event pile, transcript, embedding index, or automatic proof. Its future
+value depends on integrity, perspective, causal and responsibility boundaries,
+portability, retention, privacy, consent, and independent verification. We
+ground the design in one immutable July 2026 KFD evidence cut containing three
+live cases and six candidate tracks: three accepted only within software-domain
+profiles and three provisional. This is early feasibility evidence, not a
+conforming KFD-6 experiment. We contribute an artifact taxonomy, an
+evidence-governed discovery loop, a governance analysis of problem-definition
+power, and a falsifiable prospective evaluation protocol. The central claim is
+conditional: governed causal history can preserve future ontology-revision
+capacity; storage volume, narrative coherence, or generator confidence cannot.
+\end{abstract}
+
+\input{sections/01-introduction}
+\input{sections/02-episode-assets}
+\input{sections/03-mechanism}
+\input{sections/04-question-rights}
+\input{sections/05-evidence}
+\input{sections/06-evaluation}
+\input{sections/07-related-work}
+\input{sections/08-limitations}
+\input{sections/09-conclusion}
+
+\begingroup
+\raggedright
+\bibliographystyle{plain}
+\bibliography{references}
+\endgroup
+
+\end{document}

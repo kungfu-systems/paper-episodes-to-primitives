@@ -1,0 +1,35 @@
+name: Paper Release
+
+on:
+  push:
+    branches:
+      - "alpha/v*/v*.*"
+      - "release/v*/v*.*"
+  workflow_dispatch:
+    inputs:
+      buildchain-ref:
+        description: "Temporary Buildchain runtime ref for trusted manual validation"
+        required: false
+        default: ""
+
+jobs:
+  paper-release:
+    uses: kungfu-systems/buildchain/.github/workflows/paper-release-sealed.yml@v2-alpha
+    permissions:
+      actions: read
+      checks: write
+      contents: write
+      id-token: write
+      issues: write
+    with:
+      buildchain-ref: ${{ inputs.buildchain-ref || '' }}
+      buildchain-contract-lock-path: .buildchain/contract-lock.json
+      publisher-workflow-path: .github/workflows/paper-release.yml
+      toolchain-type: config
+      verify-command: make check
+      artifact-name: paper-episodes-to-primitives
+      artifact-paths: _build/episodes-to-primitives.pdf
+      github-release: true
+      release-passport-product-name: From Episodes to Primitives
+    secrets:
+      BUILDCHAIN_PROMOTION_TOKEN: ${{ secrets.BUILDCHAIN_PROMOTION_TOKEN }}

@@ -1,0 +1,111 @@
+\section{Episode Historical Assets}
+\label{sec:episode-assets}
+
+\subsection{From recorded events to causal experience}
+
+Event order is necessary but insufficient. Distributed histories already show
+that order and causality cannot be inferred from a single wall clock
+\cite{lamport1978time}. Provenance standards distinguish entities, activities,
+agents, derivation, and responsibility \cite{w3cProv2013}. KFD adds a
+participant and ontology boundary: what did an observer accept, which action
+was attempted under which authority, what consequence was borne, what evidence
+was missing, and which later interpretation remains a claim?
+
+We model an Episode $e$ as:
+
+\begin{equation}
+e = (i, P, F^{-}, A, D, C, I, F^{+}, R, G, S),
+\end{equation}
+
+where $i$ is stable identity; $P$ is declared observer and perspective;
+$F^{-}$ and $F^{+}$ are adjacent admitted Fact cuts; $A$ is the action and
+bounded intent; $D$ records dependencies and authority; $C$ records
+consequences, costs, failures, retries, and overrides; $I$ records
+interventions; $R$ binds evidence and receipts; $G$ declares gaps, redaction,
+degradation, and proxy-only consequences; and $S$ declares stewardship policy.
+
+This tuple is a responsibility decomposition, not a required physical layout.
+An implementation may use several stores or one content-addressed bundle. It
+qualifies as an Episode only when the relevant distinctions remain recoverable
+and verifiable.
+
+\subsection{Artifact taxonomy}
+
+Table~\ref{tab:taxonomy} prevents a common category error: more storage does
+not imply a stronger historical asset.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{p{0.16\linewidth}p{0.31\linewidth}p{0.42\linewidth}}
+\toprule
+Artifact & Useful capability & Insufficient by itself because \\
+\midrule
+Transcript & Recover utterances and tool output & Speaker position, action
+authority, omitted evidence, consequences, and admission may be implicit. \\
+Event log & Query ordered or timestamped events & The event schema may flatten
+observer, responsibility, causal dependency, and competing views. \\
+Provenance graph & Relate entities, activities, agents, and derivations & It
+does not necessarily preserve the ontology under test, qualification gate, or
+promotion authority. \\
+Endpoint Fact cut & State what was admitted at one boundary & It can omit the
+path, alternatives, intervention, failure, and consequence that explain why a
+new distinction emerged. \\
+Derived index & Retrieve summaries, embeddings, or clusters efficiently & It
+is a projection whose loss, source cut, update policy, and non-authority must
+remain explicit. \\
+Episode asset & Replay a perspective-bound causal occurrence with evidence and
+governance & It preserves discovery options but neither generates nor
+qualifies a Primitive automatically. \\
+\bottomrule
+\end{tabular}
+\caption{Historical artifact taxonomy. The categories may compose; they are
+not interchangeable evidence grades.}
+\label{tab:taxonomy}
+\end{table}
+
+\subsection{Asset conditions}
+
+A corpus $\mathcal{E}_c$ is an Episode historical asset only if its declared
+cut $c$ satisfies six conditions:
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Integrity:} stable identities, roots, corruption detection,
+        recovery boundaries, and immutable prior cuts.
+  \item \textbf{Perspective:} observer position, accepted facts, natural
+        objects, consequences, and known gaps remain visible.
+  \item \textbf{Causal and responsibility structure:} actions, dependencies,
+        authority, outcomes, interventions, and omissions are not flattened
+        into anonymous tokens.
+  \item \textbf{Portability:} export and import preserve exact roots or declare
+        loss; provider migration does not silently redefine identity.
+  \item \textbf{Governance:} retention, deletion, consent, access, redaction,
+        purpose, and review policies are enforceable and auditable.
+  \item \textbf{Independent challenge:} another accountable participant or
+        verifier can inspect evidence, degradation, and later qualification.
+\end{enumerate}
+
+The corpus may be intentionally incomplete. Completeness claims are stronger
+than asset claims and usually unavailable. A useful asset makes omissions
+inspectable instead of generating certainty to cover them.
+
+\subsection{Option value without storage determinism}
+
+Let $Q_f$ be a future distribution of admissible questions and $\Pi$ the
+policies that permit a participant to inspect a corpus. We define the
+\emph{discovery option value} of an Episode cut qualitatively as the avoidable
+future burden of reconstructing perspective, causality, and responsibility
+when a question requires concepts absent from $O_n$:
+
+\begin{equation}
+V_{\mathrm{option}}(\mathcal{E}_c) =
+\mathbb{E}_{q \sim Q_f}
+\left[ B(q \mid H(O_n)) - B(q \mid \mathcal{E}_c, \Pi) \right].
+\end{equation}
+
+$B$ may include reconstruction time, coordination load, missing-evidence risk,
+or inability to test an ontology revision. The expression is not a monetary
+valuation and does not imply $V_{\mathrm{option}}>0$. Poor capture, restricted
+access, privacy harm, corrupted roots, or ontology lock-in can make retention
+neutral or harmful. Storage volume is absent from the definition because
+volume does not establish recoverability or legitimacy.
