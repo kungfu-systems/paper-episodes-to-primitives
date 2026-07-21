@@ -1,4 +1,6 @@
 PDF_NAME := episodes-to-primitives.pdf
+SOURCE_DATE_EPOCH ?= $(shell git log -1 --format=%ct 2>/dev/null || printf '%s' 0)
+export SOURCE_DATE_EPOCH
 
 .PHONY: check pdf clean
 

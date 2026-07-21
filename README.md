@@ -73,6 +73,8 @@ make pdf
 ```
 
 The public artifact is `_build/episodes-to-primitives.pdf`.
+Both the local and Buildchain toolchains derive `SOURCE_DATE_EPOCH` from the
+source commit, so rebuilding the same commit produces stable PDF bytes.
 
 ## Status
 
