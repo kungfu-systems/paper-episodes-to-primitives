@@ -37,4 +37,5 @@
 
 Run `make check` for source checks and `make pdf` for the local PDF. CI adds the
 pinned toolchain build, publication manifest/passport, source bundle, version
-state, and release evidence.
+state, and release evidence. Both build paths pin PDF time metadata to the
+source commit through `SOURCE_DATE_EPOCH`.
