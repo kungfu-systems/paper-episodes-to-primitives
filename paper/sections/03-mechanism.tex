@@ -1,0 +1,114 @@
+\section{The KFD-4/5/6 Discovery Mechanism}
+\label{sec:mechanism}
+
+The mechanism is a sequence of gates, not one model call. Each stage preserves
+a different authority boundary.
+
+\subsection{KFD-4: replay changes the observation horizon}
+
+For admitted facts $F$, a perspective $P$ defines a projection
+$\pi_P(F)$. A transformation $T_{PQ}$ reconstructs a new declared view without
+claiming to become the source observer:
+
+\begin{equation}
+T_{PQ}: (P, \pi_P(\gamma)) \rightarrow
+(Q, \pi_Q(\gamma), J, L),
+\end{equation}
+
+where $\gamma$ is a causal path, $J$ is the set of preserved invariants, and
+$L$ is declared loss. Source identity, Fact and evidence cuts, known causal
+relations, receipts, and authority boundaries may belong to $J$. Relevance,
+ordering, natural object boundaries, and available action may change.
+
+Contrastive replay keeps at least two source views distinct. Its purpose is not
+to vote on one universal view. It asks which burden becomes natural for the
+participant who bears the next consequence. A user may expose an object hidden
+from an implementation view; a successor agent may expose a settlement object
+hidden from the coordinator who assembled its components.
+
+KFD-4 is one genesis method. Direct situated judgment, anomaly search,
+reconstruction analysis, causal-variable discovery, and structural compression
+remain first class. This method plurality prevents a successful perspective
+story from becoming a ranking theorem.
+
+\subsection{KFD-5: generation is not qualification}
+
+Genesis binds the perspective, current ontology, evidence cut, method,
+observation, candidate, and claim boundary. Qualification then asks whether the
+candidate deserves independent identity, boundary, authority, lifecycle, or
+operations.
+
+For candidate $x$, define $\operatorname{remove}_x(h)$ as a history that erases
+the semantic distinction $x$ while preserving other observable facts. The
+candidate is non-redundant for decision $d$ when two valid histories exist such
+that:
+
+\begin{equation}
+\operatorname{remove}_x(h_1)=\operatorname{remove}_x(h_2)
+\quad \land \quad
+D_d(h_1) \ne D_d(h_2).
+\end{equation}
+
+This deletion witness does not privilege a name or physical representation. A
+rival model passes if it preserves equivalent information with lower total
+burden. KFD-5 therefore requires alternatives, minimum closure, deletion and
+fuse tests, falsifiers, dogfood under load, residual risks, and one of five
+outcomes: accept, provisional, reject, subsume, or no new Primitive justified.
+
+\subsection{KFD-6: a bounded experimental loop}
+
+At loop step $n$, let $E_n$ be an immutable causal-experience cut, $O_n$ the
+declared ontology, $G_n$ plural generation experiments, $C_n$ a shared-budget
+method comparison, $Q_n$ KFD-5 qualification, $H_n$ held-out or independent
+evaluation, and $A_n$ promotion authority. Draft KFD-6 proposes:
+
+\begin{equation}
+(E_n,O_n) \rightarrow G_n \rightarrow C_n \rightarrow Q_n
+\rightarrow H_n \rightarrow A_n \rightarrow O_n \;\text{or}\; O_{n+1}.
+\end{equation}
+
+The conservative baselines are part of the mechanism:
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{fixed ontology:} improve prediction, retrieval, or workflow
+        while forbidding new first-class objects;
+  \item \textbf{no new Primitive:} permit diagnosis and local abstraction but
+        require the final decision to retain $O_n$; and
+  \item \textbf{flattened history:} use anonymous events or endpoint facts
+        under the same resource budget.
+\end{itemize}
+
+Candidates are evaluated for yield, false-candidate rate, ontology distance,
+compression, intervention value, transfer, falsifiability, cost, and
+auditability. Negative results remain part of the cut. Generated examples
+cannot be the only evidence. The generator cannot be the sole verifier or
+promotion authority.
+
+\subsection{The authority flow}
+
+The complete mechanism assigns a narrow authority to each layer:
+
+\begin{center}
+\begin{tabular}{p{0.20\linewidth}p{0.68\linewidth}}
+\toprule
+Layer & Authority \\
+\midrule
+Episode corpus & Evidence carrier with declared capture and stewardship; not
+an ontology decision. \\
+KFD-4 replay & Declared projection and comparison; not source mutation or
+candidate certification. \\
+Genesis method & Proposes a candidate and disconfirming test; not truth or
+promotion. \\
+KFD-5 qualification & Judges bounded load-bearing utility against facts and
+alternatives; not universal adoption. \\
+Held-out evaluator & Tests transfer and false candidates outside the discovery
+cut; not value or legal authority. \\
+Promotion authority & Admits or rejects ontology change inside a declared
+scope; does not rewrite prior Episodes. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+This separation is the central anti-self-certification property. It lets an
+agent contribute ontology change without turning model confidence into social
+or operational authority.

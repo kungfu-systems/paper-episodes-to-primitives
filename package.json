@@ -1,0 +1,10 @@
+{
+  "name": "@kungfu-tech/paper-episodes-to-primitives",
+  "private": true,
+  "description": "Source repository for the paper on causal Episode assets and evidence-governed primitive discovery",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kungfu-systems/paper-episodes-to-primitives.git"
+  }
+}

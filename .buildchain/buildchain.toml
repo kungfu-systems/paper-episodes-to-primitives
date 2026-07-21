@@ -1,0 +1,52 @@
+schema = 1
+
+[project]
+type = "publication-artifact"
+name = "paper-episodes-to-primitives"
+
+[publication]
+kind = "paper"
+title = "From Episodes to Primitives: Causal Historical Assets for Evidence-Governed Ontology Revision"
+version = "0.1.0-alpha.1"
+abstract = "A systems paper on preserving causal Episode histories as governed assets for replay, candidate genesis, qualification, and bounded ontology revision."
+authors = [ "Keren Dong" ]
+primary_artifact = "_build/episodes-to-primitives.pdf"
+artifact_paths = [ "_build/episodes-to-primitives.pdf" ]
+metadata_paths = [ "README.md", "docs/MAP.md" ]
+source_paths = [ "paper", "README.md", "LICENSE", "Makefile" ]
+site_consumers = [ "papers.libkungfu.dev" ]
+manifest_path = ".buildchain/publication/publication-artifact.json"
+source_bundle_path = ".buildchain/publication/source.tar.gz"
+
+[publication.archive]
+id = "episodes-to-primitives"
+canonical_url = "https://papers.libkungfu.dev/episodes-to-primitives/"
+latest_url = "https://papers.libkungfu.dev/episodes-to-primitives/latest/"
+latest_evidence_url = "https://papers.libkungfu.dev/episodes-to-primitives/latest/buildchain.release.json"
+immutable_base_url = "https://papers.libkungfu.dev/archive"
+registry_path = ".buildchain/publication/publication-registry.json"
+
+[publication.toolchain]
+type = "latex-docker"
+image = "ghcr.io/kungfu-systems/build-images/latex-pdf-builder"
+digest = "sha256:f4dc7cb0e0b23cfc2fcde663a65f36c5e71e3ae8e6477e5a24f7ad5237300f10"
+command = "mkdir -p _build && cd paper && latexmk -pdf -outdir=../_build main.tex && mv ../_build/main.pdf ../_build/episodes-to-primitives.pdf"
+
+[publish]
+kind = "npm-paper-package"
+package = "@kungfu-tech/paper-episodes-to-primitives"
+auth = "trusted-publishing"
+
+[version]
+required = true
+
+[[version.files]]
+type = "toml"
+path = ".buildchain/buildchain.toml"
+key = "publication.version"
+
+[lifecycle.install]
+command = "true"
+
+[lifecycle.verify]
+command = "make check"
