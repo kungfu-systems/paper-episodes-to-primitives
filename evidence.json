@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "version": "0.1.0-alpha.1",
+  "channel": "alpha",
+  "source_sha": "844483e91351e119f421aae2f1d95dcd47a544d0",
+  "release_sha": "844483e91351e119f421aae2f1d95dcd47a544d0",
+  "target_ref": "alpha/v0/v0.1",
+  "release_material_sha": "844483e91351e119f421aae2f1d95dcd47a544d0",
+  "publish_tooling_sha": "844483e91351e119f421aae2f1d95dcd47a544d0",
+  "artifacts": [
+    {
+      "group": "node",
+      "kind": "npm",
+      "name": "@kungfu-tech/paper-episodes-to-primitives",
+      "ref": "0.1.0-alpha.1",
+      "digest": "sha512-Pb6or2CzY2SntZLaSILTlq/BO0flPE8mm46LcXJmBiSHW4MHaG2/4HVc5ce7E0l1CvZDRf14mH9Maff2gqN5Nw=="
+    }
+  ]
+}
