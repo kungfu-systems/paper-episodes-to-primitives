@@ -1,0 +1,33 @@
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      buildchain-ref:
+        description: "Temporary Buildchain runtime ref for trusted manual validation"
+        required: false
+        default: ""
+  pull_request:
+  push:
+    branches:
+      - "dev/**"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  publication:
+    uses: kungfu-systems/buildchain/.github/workflows/publication-artifact.yml@v2-alpha
+    with:
+      buildchain-ref: ${{ inputs.buildchain-ref || '' }}
+      buildchain-contract-lock-path: .buildchain/contract-lock.json
+      toolchain-type: config
+      verify-command: make check
+      artifact-name: paper-episodes-to-primitives
+      artifact-paths: |
+        _build/episodes-to-primitives.pdf
+        .buildchain/publication/publication-artifact.json
+        .buildchain/publication/publication-artifact-passport.json
+        .buildchain/publication/publication-registry.json
+        .buildchain/publication/source.tar.gz
