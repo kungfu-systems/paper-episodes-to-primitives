@@ -7,7 +7,7 @@ name = "paper-episodes-to-primitives"
 [publication]
 kind = "paper"
 title = "From Episodes to Primitives: Causal Historical Assets for Evidence-Governed Ontology Revision"
-version = "0.1.0-alpha.1"
+version = "0.1.0-alpha.2"
 abstract = "A systems paper on preserving causal Episode histories as governed assets for replay, candidate genesis, qualification, and bounded ontology revision."
 authors = [ "Keren Dong" ]
 primary_artifact = "_build/episodes-to-primitives.pdf"
