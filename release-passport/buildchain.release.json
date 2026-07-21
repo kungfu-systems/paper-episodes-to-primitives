@@ -59,7 +59,7 @@
     "promotionChannelTreeSha": "",
     "publishToolingSha": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3",
     "releaseStateRef": "refs/heads/buildchain/release-state/0-1-0-alpha-2",
-    "releaseStateSha": "",
+    "releaseStateSha": "543bf484d9eab635607cf75b095e714e11a74367",
     "package": {
       "name": "@kungfu-tech/paper-episodes-to-primitives",
       "version": "0.1.0-alpha.2"
