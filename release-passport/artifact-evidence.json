@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "contract": "kungfu-buildchain-artifact-evidence",
+  "repository": "kungfu-systems/paper-episodes-to-primitives",
+  "release": {
+    "tag": "v0.1.0-alpha.2",
+    "sourceSha": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3"
+  },
+  "generatedAt": "2026-07-21T10:58:10.292Z",
+  "runner": {
+    "kind": "github-hosted",
+    "os": "Linux",
+    "arch": "X64",
+    "labels": [],
+    "image": "ubuntu24"
+  },
+  "workflow": {
+    "name": "Paper Release",
+    "runId": "29824165476",
+    "runAttempt": "1",
+    "url": "https://github.com/kungfu-systems/paper-episodes-to-primitives/actions/runs/29824165476"
+  },
+  "artifacts": []
+}

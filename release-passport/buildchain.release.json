@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "contract": "kungfu-buildchain-release-passport",
+  "generatedAt": "2026-07-21T10:58:10.296Z",
+  "surfaceTimestampPolicy": {
+    "generatedAt": "2026-07-21T10:58:10.296Z",
+    "publishedAt": "2026-07-21T10:58:10.296Z",
+    "reproducible": true,
+    "timestampPolicy": "ci-injected",
+    "deterministicInputs": [
+      "release.sourceSha",
+      "release.releaseSha",
+      "release.releaseMaterialSha",
+      "artifact-evidence.json",
+      "publish evidence",
+      "release-state transaction",
+      "controller receipt references",
+      "sourceRevision",
+      "sourceDateEpoch",
+      "package content",
+      "declared Buildchain surface manifest contract"
+    ],
+    "sourceDateEpoch": "0",
+    "sourceRevision": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3",
+    "timestampPolicyDetails": {
+      "contract": "kungfu-buildchain-surface-timestamp-policy",
+      "timestampFields": [
+        "generatedAt",
+        "publishedAt",
+        "surfaceTimestampPolicy.generatedAt",
+        "surfaceTimestampPolicy.publishedAt"
+      ],
+      "timestampFieldsParticipateInArtifactDigest": true,
+      "artifactDigestScope": "release passport JSON and release evidence bundle",
+      "note": "Human-readable timestamps are separate from reproducibility inputs; do not infer reproducibility from epoch timestamps."
+    }
+  },
+  "product": {
+    "name": "From Episodes to Primitives",
+    "repository": "kungfu-systems/paper-episodes-to-primitives",
+    "mechanism": "product-mechanism.json"
+  },
+  "release": {
+    "tag": "v0.1.0-alpha.2",
+    "publicTag": "v0.1.0-alpha.2",
+    "internalTag": "v0.1.0-alpha.2",
+    "internalVersion": "0.1.0-alpha.2",
+    "publishedVersion": "0.1.0-alpha.2",
+    "versionLabel": "0.1.0-alpha.2",
+    "line": "v0.1",
+    "sourceSha": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3",
+    "channel": "alpha",
+    "targetRef": "alpha/v0/v0.1",
+    "releaseSha": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3",
+    "releaseMaterialSha": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3",
+    "builtSourceSha": "",
+    "builtSourceTreeSha": "",
+    "promotionChannelSha": "",
+    "promotionChannelTreeSha": "",
+    "publishToolingSha": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3",
+    "releaseStateRef": "refs/heads/buildchain/release-state/0-1-0-alpha-2",
+    "releaseStateSha": "",
+    "package": {
+      "name": "@kungfu-tech/paper-episodes-to-primitives",
+      "version": "0.1.0-alpha.2"
+    },
+    "exactRef": "refs/tags/v0.1.0-alpha.2"
+  },
+  "workflow": {
+    "name": "Paper Release",
+    "runId": "29824165476",
+    "runAttempt": "1",
+    "url": "https://github.com/kungfu-systems/paper-episodes-to-primitives/actions/runs/29824165476"
+  },
+  "runnerPolicy": {
+    "productionDefault": "github-hosted",
+    "compatibilityFixture": "self-hosted",
+    "note": "Runner facts are recorded in artifact evidence; the protocol does not require self-hosted runners."
+  },
+  "trustedPublishing": {
+    "provider": "npm",
+    "enabled": true,
+    "auth": "trusted-publishing",
+    "workflowRunId": "29824165476",
+    "workflowRunAttempt": "1",
+    "evidence": ""
+  },
+  "transaction": {
+    "id": "63aeffc4d0ae644695176b9bffa038b7660d205fe8162d03c872f233d2d2367f",
+    "version": "0.1.0-alpha.2",
+    "state": "complete",
+    "previousState": "finalizing",
+    "exactTag": "v0.1.0-alpha.2",
+    "releaseSha": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3",
+    "releaseMaterialSha": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3",
+    "stateRef": "buildchain/release-state/0-1-0-alpha-2",
+    "statePath": "/home/runner/work/paper-episodes-to-primitives/paper-episodes-to-primitives/.buildchain/release-state/v0.1.0-alpha.2.json",
+    "stateSha": "",
+    "evidencePath": "/home/runner/work/paper-episodes-to-primitives/paper-episodes-to-primitives/.buildchain/release-evidence/v0.1.0-alpha.2/evidence.json",
+    "updatedAt": "2026-07-21T10:58:08.153Z",
+    "result": {
+      "command": "finalize",
+      "validation": {
+        "valid": true,
+        "errors": []
+      }
+    }
+  },
+  "buildSummary": {
+    "path": "../admitted/artifact/.buildchain/paper-release/build-summary.json",
+    "sha256": "388e95e3fe13d2b4034300e177b0e609eb9162f4b281838ccb8984fbacac62c0",
+    "fields": {
+      "schemaVersion": 1,
+      "contract": "kungfu-buildchain-paper-release-build-summary",
+      "repository": "kungfu-systems/paper-episodes-to-primitives",
+      "sourceSha": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3",
+      "package": {
+        "name": "@kungfu-tech/paper-episodes-to-primitives",
+        "version": "0.1.0-alpha.2"
+      },
+      "publication": {
+        "manifestPath": ".buildchain/publication/publication-artifact.json",
+        "passportPath": ".buildchain/publication/publication-artifact-passport.json",
+        "registryPath": ".buildchain/publication/publication-registry.json",
+        "primaryArtifact": "_build/episodes-to-primitives.pdf"
+      },
+      "platforms": [
+        {
+          "id": "paper",
+          "manifestPath": ".buildchain/publication/publication-artifact.json"
+        }
+      ]
+    }
+  },
+  "platformArtifactManifests": [
+    {
+      "path": "../admitted/artifact/.buildchain/publication/publication-artifact.json",
+      "sha256": "69d9a8af4affbb52736b2bb7c907c698657e65472b658398f5a0190ca637e052",
+      "fields": {
+        "schemaVersion": 1,
+        "contract": "kungfu-buildchain-publication-artifact-manifest",
+        "project": {
+          "name": "paper-episodes-to-primitives",
+          "type": "publication-artifact"
+        },
+        "publication": {
+          "kind": "paper",
+          "title": "From Episodes to Primitives: Causal Historical Assets for Evidence-Governed Ontology Revision",
+          "version": "0.1.0-alpha.2",
+          "abstract": "A systems paper on preserving causal Episode histories as governed assets for replay, candidate genesis, qualification, and bounded ontology revision.",
+          "authors": [
+            "Keren Dong"
+          ],
+          "primaryArtifact": "_build/episodes-to-primitives.pdf",
+          "siteConsumers": [
+            "papers.libkungfu.dev"
+          ],
+          "archive": {
+            "contract": "kungfu-buildchain-publication-artifact-archive",
+            "id": "episodes-to-primitives",
+            "version": "0.1.0-alpha.2",
+            "appendOnly": true,
+            "sameVersionRepublish": "fail-on-digest-change",
+            "immutablePathPolicy": "do-not-sync-delete-immutable-prefixes",
+            "routes": {
+              "canonicalUrl": "https://papers.libkungfu.dev/episodes-to-primitives/",
+              "latestUrl": "https://papers.libkungfu.dev/episodes-to-primitives/latest/",
+              "latestEvidenceUrl": "https://papers.libkungfu.dev/episodes-to-primitives/latest/buildchain.release.json",
+              "immutableVersionPrefix": "https://papers.libkungfu.dev/archive/episodes-to-primitives/v0.1.0-alpha.2/",
+              "immutableVersionUrl": "https://papers.libkungfu.dev/archive/episodes-to-primitives/v0.1.0-alpha.2/",
+              "artifactUrlPrefix": "https://papers.libkungfu.dev/archive/episodes-to-primitives/v0.1.0-alpha.2/"
+            },
+            "registry": {
+              "contract": "kungfu-buildchain-publication-artifact-registry",
+              "path": ".buildchain/publication/publication-registry.json"
+            },
+            "publicArtifacts": {
+              "manifest": {
+                "path": ".buildchain/publication/publication-artifact.json",
+                "url": "https://papers.libkungfu.dev/archive/episodes-to-primitives/v0.1.0-alpha.2/publication-artifact.json"
+              },
+              "passport": {
+                "path": ".buildchain/publication/publication-artifact-passport.json",
+                "url": "https://papers.libkungfu.dev/archive/episodes-to-primitives/v0.1.0-alpha.2/publication-artifact-passport.json"
+              },
+              "sourceBundle": {
+                "path": ".buildchain/publication/source.tar.gz",
+                "url": "https://papers.libkungfu.dev/archive/episodes-to-primitives/v0.1.0-alpha.2/source.tar.gz",
+                "sha256": "b4b60a4cde0e3a9c741ea88d80d01957f7aafd4539eb41ec2f37fe29106f3e6d",
+                "bytes": 22247
+              },
+              "artifacts": [
+                {
+                  "path": "_build/episodes-to-primitives.pdf",
+                  "bytes": 372843,
+                  "sha256": "6d330c243facd537c7ab0a94436889133b0f88f091ad309e8801e69c2987ea65",
+                  "role": "primary",
+                  "url": "https://papers.libkungfu.dev/archive/episodes-to-primitives/v0.1.0-alpha.2/episodes-to-primitives.pdf"
+                }
+              ]
+            }
+          }
+        },
+        "toolchain": {
+          "type": "latex-docker",
+          "trustClassification": "pinned-docker-toolchain",
+          "command": "export SOURCE_DATE_EPOCH=$(git log -1 --format=%ct 2>/dev/null || printf 0) && mkdir -p _build && cd paper && latexmk -pdf -outdir=../_build main.tex && mv ../_build/main.pdf ../_build/episodes-to-primitives.pdf",
+          "image": "ghcr.io/kungfu-systems/build-images/latex-pdf-builder",
+          "digest": "sha256:f4dc7cb0e0b23cfc2fcde663a65f36c5e71e3ae8e6477e5a24f7ad5237300f10",
+          "machineVerifiable": true,
+          "invocation": "docker-image-digest"
+        },
+        "source": {
+          "repository": "https://github.com/kungfu-systems/paper-episodes-to-primitives",
+          "sha": "ea07c5458ffde748e5c62a4e6551a45a1c57c3b3",
+          "treeSha": "5cba3080131623a289ddfe6d8efde0b2e91186bc",
+          "sourcePaths": [
+            "paper",
+            "README.md",
+            "LICENSE",
+            "Makefile"
+          ],
+          "sourceFiles": [
+            {
+              "path": "LICENSE",
+              "bytes": 11357,
+              "sha256": "aaa62ccb6cf175f529bfc10e3e979353178ac122ce331dce2ca43475a9ff7706"
+            },
+            {
+              "path": "Makefile",
+              "bytes": 538,
+              "sha256": "aaf64382ffd4eed4d4156303fc005a785e640c6d2dca25c2d14dd329afb25812"
+            },
+            {
+              "path": "paper/main.tex",
+              "bytes": 2942,
+              "sha256": "7445e0a6c10092da35b534b8b00239355423773b7030db607afa06881ea0ef99"
+            },
+            {
+              "path": "paper/references.bib",
+              "bytes": 5498,
+              "sha256": "93d9f7911ef4777076b70c5872916669f783577b2811e3a0888a5ebd8e9f486d"
+            },
+            {
+              "path": "paper/sections/01-introduction.tex",
+              "bytes": 5932,
+              "sha256": "beef4b04e958a54871f5a9aa95c0c11e7a40db94794ecf65a16a83694a1000ce"
+            },
+            {
+              "path": "paper/sections/02-episode-assets.tex",
+              "bytes": 5278,
+              "sha256": "2138d8bb3b16c718d035a64da7d0629cf5d70d6fc272c4b9f06c049b578fc495"
+            },
+            {
+              "path": "paper/sections/03-mechanism.tex",
+              "bytes": 4878,
+              "sha256": "92c04aaa4b9c6bb8aa8ce2affba25d0ff4a08612edec7998f6ba764fd20d42ee"
+            },
+            {
+              "path": "paper/sections/04-question-rights.tex",
+              "bytes": 3717,
+              "sha256": "4a7405f7d5d8ff84b4b0b48fc8f9149b684ad733357164bd1726056bc7aafc44"
+            },
+            {
+              "path": "paper/sections/05-evidence.tex",
+              "bytes": 5184,
+              "sha256": "3ae6d2b5e479702d7898e6672d38b9b7b4e3a285540881ca5c6a5afded098bf3"
+            },
+            {
+              "path": "paper/sections/06-evaluation.tex",
+              "bytes": 4536,
+              "sha256": "f026b09394a577cf6874e149eeecedb2531b85372bb6564d2a98df9f3dbe965c"
+            },
+            {
+              "path": "paper/sections/07-related-work.tex",
+              "bytes": 3307,
+              "sha256": "826f2a5bdc57446ee2889805bb27068c941f3a405c03ba2cdf0c7e92546bde2e"
+            },
+            {
+              "path": "paper/sections/08-limitations.tex",
+              "bytes": 2871,
+              "sha256": "c9d22c3826d23da86d5c37d72d7863e43c11f373c09f6490e77929ed2aab7eff"
+            },
+            {
+              "path": "paper/sections/09-conclusion.tex",
+              "bytes": 2288,
+              "sha256": "23e0de308221cb45932f677451a060c1bdde2801a78e8aa6ec3df50f827ac587"
+            },
+            {
+              "path": "README.md",
+              "bytes": 2661,
+              "sha256": "c85d864bc873e3cbcbda9863fa2a03074fc1f5305cfbc0791a5683f701492faf"
+            }
+          ],
+          "sourceBundle": {
+            "path": ".buildchain/publication/source.tar.gz",
+            "bytes": 22247,
+            "sha256": "b4b60a4cde0e3a9c741ea88d80d01957f7aafd4539eb41ec2f37fe29106f3e6d"
+          }
+        },
+        "artifacts": [
+          {
+            "path": "_build/episodes-to-primitives.pdf",
+            "bytes": 372843,
+            "sha256": "6d330c243facd537c7ab0a94436889133b0f88f091ad309e8801e69c2987ea65"
+          }
+        ],
+        "metadata": [
+          {
+            "path": "docs/MAP.md",
+            "bytes": 1869,
+            "sha256": "72f1b40f5d119c979e346ba5560c4a06c4b800364cd614e998b28dff0cb244ab"
+          },
+          {
+            "path": "README.md",
+            "bytes": 2661,
+            "sha256": "c85d864bc873e3cbcbda9863fa2a03074fc1f5305cfbc0791a5683f701492faf"
+          }
+        ],
+        "generatedAt": "2026-07-21T10:57:14.634Z",
+        "publishedAt": "2026-07-21T10:57:14.634Z",
+        "reproducible": true,
+        "timestampPolicy": "ci-injected",
+        "deterministicInputs": [
+          "publication source paths",
+          "publication metadata paths",
+          "publication primary artifact",
+          "Buildchain publication contract",
+          "source SHA",
+          "source tree SHA"
+        ],
+        "timestampPolicyDetails": {
+          "contract": "kungfu-buildchain-surface-timestamp-policy",
+          "timestampFields": [
+            "generatedAt",
+            "publishedAt"
+          ],
+          "timestampFieldsParticipateInArtifactDigest": false,
+          "artifactDigestScope": "publication artifact digests cover files and source bundle, not manifest timestamps"
+        }
+      },
+      "platform": "",
+      "artifactName": ""
+    }
+  ],
+  "distTagPromotion": {
+    "path": "../release-evidence/v0.1.0-alpha.2/dist-tag-evidence.json",
+    "sha256": "de3c04b79ededeea31dd5315fc0a1b41dea809873449d0fe16eb58b79012b6f4",
+    "fields": {
+      "schema": 1,
+      "contract": "kungfu-buildchain-dist-tag-promotion-evidence",
+      "mode": "publish-final-version",
+      "auth": "trusted-publishing",
+      "distTag": "alpha",
+      "source": "workflow-input",
+      "packages": [
+        {
+          "name": "@kungfu-tech/paper-episodes-to-primitives",
+          "version": "0.1.0-alpha.2",
+          "distTag": "alpha",
+          "role": "",
+          "digest": "sha512-D7NGY7wtV54r5w3zzlq51gOcmBHkmT8jiMoIvdIZS8QOjvHv86cs4yqZ6JCAooW6aV2h8v0mNiiMbKP59PwgZA=="
+        }
+      ]
+    }
+  },
+  "versionImpact": {
+    "final": "unknown",
+    "source": "default",
+    "rationale": "No surface impact classification was supplied."
+  },
+  "surfaceImpacts": [],
+  "artifacts": [
+    {
+      "group": "node",
+      "kind": "npm",
+      "name": "@kungfu-tech/paper-episodes-to-primitives",
+      "ref": "0.1.0-alpha.2",
+      "digest": "sha512-D7NGY7wtV54r5w3zzlq51gOcmBHkmT8jiMoIvdIZS8QOjvHv86cs4yqZ6JCAooW6aV2h8v0mNiiMbKP59PwgZA==",
+      "evidence": "../release-evidence/v0.1.0-alpha.2/evidence.json"
+    }
+  ],
+  "evidence": {
+    "artifactEvidence": "artifact-evidence.json",
+    "publishEvidence": "evidence.json",
+    "transactionState": "",
+    "buildSummary": "../admitted/artifact/.buildchain/paper-release/build-summary.json",
+    "buildFacts": [],
+    "platformArtifactManifests": [
+      {
+        "path": "../admitted/artifact/.buildchain/publication/publication-artifact.json",
+        "sha256": "69d9a8af4affbb52736b2bb7c907c698657e65472b658398f5a0190ca637e052",
+        "platform": "",
+        "artifactName": ""
+      }
+    ],
+    "distTagPromotionEvidence": "../release-evidence/v0.1.0-alpha.2/dist-tag-evidence.json",
+    "kfd1": "",
+    "kfd2": "",
+    "kfd3": "",
+    "invariantPassports": "",
+    "impact": "impact.json",
+    "checkReport": "check-report.json",
+    "agentIndex": "agent-index.json"
+  },
+  "recovery": {
+    "rollback": "Use the previous exact release tag or previous floating channel ref.",
+    "verify": "buildchain verify release-passport buildchain.release.json"
+  }
+}
