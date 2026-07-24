@@ -1,0 +1,27 @@
+name: Governance
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  governance:
+    name: governance
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Verify Code Owner authority
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f .github/CODEOWNERS
+          grep -Fx '* @kungfu-origin' .github/CODEOWNERS
+          grep -Fx '/.github/CODEOWNERS @kungfu-origin' .github/CODEOWNERS
+          grep -Fx '/.github/workflows/governance.yml @kungfu-origin' .github/CODEOWNERS
