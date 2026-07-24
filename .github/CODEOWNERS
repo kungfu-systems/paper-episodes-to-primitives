@@ -1,0 +1,6 @@
+# GitHub review and governance authority.
+* @kungfu-origin
+
+# Last-match rules protect the authority file and its bootstrap check.
+/.github/CODEOWNERS @kungfu-origin
+/.github/workflows/governance.yml @kungfu-origin
