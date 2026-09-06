@@ -1,3 +1,22 @@
+---
+status: active
+period: ongoing
+theme: paper-buildchain-v4
+doc_type: reference
+source_level: local-files
+confidence: high
+sensitivity: public
+evidence_grade: A
+review_state: self-reviewed
+last_reviewed: 2026-09-06
+ai_provenance:
+  model_family: GPT-6
+  product: Codex
+  generated_at: 2026-09-06
+  visible_context: Repository files and Buildchain v4 migration contracts.
+  invisible_context_boundary: No private data or hidden model state inspected.
+---
+
 # Repository Map
 
 ## Paper Source
@@ -17,7 +36,8 @@
 ## Buildchain
 
 - `.buildchain/buildchain.toml`: publication and release contract.
-- `.buildchain/contract-lock.json`: accepted Buildchain v2 contract root.
+- `.buildchain/contract-lock.json`: accepted Buildchain v4 stable contract lock.
+- `.buildchain/alpha-contract-lock.json`: accepted Buildchain v4-alpha development contract lock.
 - `.github/workflows/build.yml`: reproducible publication artifact build.
 - `.github/workflows/verify.yml`: version and repository verification.
 - `.github/workflows/paper-release.yml`: sealed npm and GitHub paper release.
