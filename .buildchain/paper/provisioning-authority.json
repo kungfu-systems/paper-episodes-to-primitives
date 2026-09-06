@@ -25,7 +25,7 @@
     },
     "verify": {
       "path": ".github/workflows/verify.yml",
-      "sourceDigest": "sha256:3cf8745e12e63de9a8324f7b1f7e9c36e5ff17979303715cc18692abfb15020d",
+      "sourceDigest": "sha256:014d8cdba56653d094b10315633059c8e4bf5053255fa95978d324fb90cb17fa",
       "reusablePath": ".github/workflows/check.yml",
       "reusableRef": "v4-alpha",
       "reusableRefs": [
@@ -48,7 +48,7 @@
     "policyPath": ".buildchain/paper/agent-entry.json",
     "policyDigest": "sha256:9b5fae72bdbfb3b3614d29ad34b4962c949d03962ca2a86cd7b57d1177924c84",
     "instructionsPath": "AGENTS.md",
-    "instructionsDigest": "sha256:a48f53c1cd4f26b1f0409110d365dd29e62a559078eea647ca72eccde9129973"
+    "instructionsDigest": "sha256:f9ea8a10e2c8105c1d1f4590c0da3fd6e300989dd493b74bbf665bae31b2995f"
   },
   "admission": {
     "contractLockPath": ".buildchain/alpha-contract-lock.json",
@@ -106,5 +106,5 @@
     },
     "policyDigest": "sha256:42aafcd084e0de8f569176df4397120e226b4f619b0ff3db804bbb528e1313af"
   },
-  "authorityDigest": "sha256:587f8f0e1527982d5604bc8c6a5438cf46d0cd9ad37b994a8b4328162994191f"
+  "authorityDigest": "sha256:baf9c980a4d8b2119137c80b91d2322c4de5d48bcf9bb4532f7079a9da06fdf5"
 }
